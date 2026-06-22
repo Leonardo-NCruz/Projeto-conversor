@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <img src="assets/logo-gif.gif" alt="Logo" id="logo">
+    <main>
+        <label>
+            Converter <strong>de</strong>
+            <select name="moeda-a-converter" id="select-moeda-a-ser-convertida">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="iene">¥ Iene Japonês</option>
+                <option value="peso">ARS Peso Argentino</option>
+                <option value="dinar">KWD Dinar Kuwaitiano</option>
+                <option value="bitcoins">₿ Bitcoin</option>
+            </select> 
+        </label>
+        <label>
+            Converter <strong>para</strong>
+            <select name="moeda-convertida" id="select-moeda-convertida">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="euro">€ Euro</option>
+                <option value="iene">¥ Iene Japonês</option>
+                <option value="peso">ARS Peso Argentino</option>
+                <option value="dinar">KWD Dinar Kuwaitiano</option>
+                <option value="bitcoins">₿ Bitcoin</option>
+            </select> 
+        </label>
+        <label>Valor 
+            <input type="number" id="input-valor" placeholder="R$ 1.000,00">
+        </label> 
+        <button id="button-conversao">Converter</button>
+        <section id="resultado">
+            <div class="caixa-conversao">
+                <img src="assets/real.png" alt="logo-moeda-conversao" class="moeda-img" id="img-moeda-a-converter">
+                <p class="moeda" id="tipo-da-moeda-a-converter">Real</p>
+                <p class="valor-moeda" id="valor-a-ser-convertido">R$ 0,00</p>
+            </div>
+            <img src="assets/seta.png" alt="seta" id="seta">
+            <div class="caixa-conversao">
+                <img src="assets/dolar.png" alt="logo-moeda-conversao" class="moeda-img" id="img-moeda-conversao">
+                <p class="moeda" id="tipo-da-moeda">Dólar</p>
+                <p class="valor-moeda" id="valor-convertido">US$ 0,00</p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
